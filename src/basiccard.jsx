@@ -4,7 +4,7 @@ import { Carousel, Card } from "react-bootstrap";
 
 export default function ElegantCard({ images, txt, size }) {
   return (
-    <Slide>
+    <Slide triggerOnce>
       <div className="d-flex justify-content-center align-items-center">
         <div className="mr-3">
           <Carousel interval={null} style={{ maxWidth: size + "px" }}>
