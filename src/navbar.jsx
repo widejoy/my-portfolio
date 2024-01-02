@@ -9,7 +9,7 @@ export default function Navbars() {
     });
   };
   const scrollToProjects = () => {
-    scroll.scrollTo(2000, {
+    scroll.scrollTo(2900, {
       smooth: true,
     });
   };
@@ -17,7 +17,7 @@ export default function Navbars() {
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
-        <Navbar.Brand href="#AboutMe">About Me</Navbar.Brand>
+        <Navbar.Brand>About Me</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
