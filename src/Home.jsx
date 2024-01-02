@@ -1,7 +1,8 @@
 import React from "react";
-import { Fade } from "react-reveal";
+import { Fade} from "react-reveal";
 import Navbars from "./navbar";
 import { Container, Row, Col, Placeholder } from "react-bootstrap";
+import BasicCard from "./basiccard";
 
 export default function Home() {
   return (
@@ -40,10 +41,16 @@ export default function Home() {
           </Container>
         </div>
 
-        <div className="py-5"> {/* Additional padding to separate sections */}
+        <div className="py-5 about-me-section bg-dark text-light"> {/* Additional padding to separate sections */}
           <h1 className="text-center mt-4">My Experiences</h1> 
           <br />
           <h2 className="text-center mt-4">Internship at Lieper books</h2>
+          <br />
+          <BasicCard txt={"So when I had a decent grasp over flutter and firebase i wanted some industrial expirience and thats when i met abrar through a friend he works as a CFO in a relatively new company which uses flutter and I thought that was the perfect oppurtunity to learn more about flutter,to meet new amazing people and get some industry expirience"} images={["internship_certificate.png"]} size={500}></BasicCard>
+          <br />
+          <h2 className="text-center mt-4">NSS:UNIT-2 Secretary</h2>
+          <br />
+          <BasicCard txt={""} images={["nss0.png","nss1.jpg","nss2.jpg","nss3.png"]} size={500}></BasicCard>
         </div>
       </Fade>
     </div>
