@@ -1,6 +1,19 @@
+import React from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function Navbars() {
+  const scrollToExperiences = () => {
+    scroll.scrollTo(800, {
+      smooth: true,
+    });
+  };
+  const scrollToProjects = () => {
+    scroll.scrollTo(2000, {
+      smooth: true,
+    });
+  };
+
   return (
     <Navbar collapseOnSelect expand="lg">
       <Container>
@@ -9,8 +22,8 @@ export default function Navbars() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            <Nav.Link href="#Experience">Experience</Nav.Link>
-            <Nav.Link href="#Projects">Projects</Nav.Link>
+            <Nav.Link onClick={scrollToExperiences}>Experience</Nav.Link>
+            <Nav.Link onClick={scrollToProjects}>Projects</Nav.Link>
             <Nav.Link eventKey={2} href="#Contact">
               Contact
             </Nav.Link>

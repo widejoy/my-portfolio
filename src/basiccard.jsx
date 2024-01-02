@@ -1,13 +1,13 @@
 import React from "react";
-import { Fade, Slide } from "react-reveal";
+import { Slide } from "react-awesome-reveal";
 import { Carousel, Card } from "react-bootstrap";
 
 export default function ElegantCard({ images, txt, size }) {
   return (
-    <Fade left>
+    <Slide>
       <div className="d-flex justify-content-center align-items-center">
         <div className="mr-3">
-          <Carousel style={{ maxWidth: size + "px" }}>
+          <Carousel interval={null} style={{ maxWidth: size + "px" }}>
             {images.map((image, index) => (
               <Carousel.Item key={index}>
                 <img
@@ -28,6 +28,6 @@ export default function ElegantCard({ images, txt, size }) {
           </Card.Body>
         </Card>
       </div>
-    </Fade>
+    </Slide>
   );
 }
