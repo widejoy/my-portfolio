@@ -41,16 +41,20 @@ export default function Home() {
           </Container>
         </div>
 
-        <div className="py-5 about-me-section bg-dark text-light"> {/* Additional padding to separate sections */}
+        <div className="py-5 about-me-section bg-dark text-light"> 
           <h1 className="text-center mt-4">My Experiences</h1> 
           <br />
           <h2 className="text-center mt-4">Internship at Lieper books</h2>
           <br />
           <BasicCard txt={"So when I had a decent grasp over flutter and firebase i wanted some industrial expirience and thats when i met abrar through a friend he works as a CFO in a relatively new company which uses flutter and I thought that was the perfect oppurtunity to learn more about flutter,to meet new amazing people and get some industry expirience"} images={["internship_certificate.png"]} size={500}></BasicCard>
           <br />
-          <h2 className="text-center mt-4">NSS:UNIT-2 Secretary</h2>
+          <h2 className="text-center mt-4">NSS:UNIT-2 CUSAT Secretary</h2>
           <br />
-          <BasicCard txt={""} images={["nss0.png","nss1.jpg","nss2.jpg","nss3.png"]} size={500}></BasicCard>
+          <BasicCard txt={"I had this oppurtinity in my college to become an nss secretary I did not think much about it becaause I only patricipated in small scale nss activities before but i had no idea about the amazing activities I got to take part in for example We had to go to a small goverment playschool and buy some toys for them,Clean the area,paint the walls ect,It gave me a feeling like im giving back to the communtity"} images={["nss0.png","nss1.jpg","nss2.jpg","nss4.jpg"]} size={500}></BasicCard>
+          <br />
+          <h2 className="text-center mt-4">Chess Club Captain</h2>
+          <br />
+          <BasicCard txt={"When the anual inter-college tournament came up I got selected by our senior into the team i was really tensed and not really sure what to do but we performed quite well so when he graduated he gave me the oppurtunity to be the new captain which gave me new leadership and organising skills ,The position also thought me how to work in a team"} images={[]} size={500}></BasicCard>  
         </div>
       </Fade>
     </div>

@@ -1,10 +1,10 @@
 import React from "react";
-import { Slide } from "react-reveal";
+import { Fade, Slide } from "react-reveal";
 import { Carousel, Card } from "react-bootstrap";
 
 export default function ElegantCard({ images, txt, size }) {
   return (
-    <Slide right>
+    <Fade left>
       <div className="d-flex justify-content-center align-items-center">
         <div className="mr-3">
           <Carousel style={{ maxWidth: size + "px" }}>
@@ -28,6 +28,6 @@ export default function ElegantCard({ images, txt, size }) {
           </Card.Body>
         </Card>
       </div>
-    </Slide>
+    </Fade>
   );
 }
