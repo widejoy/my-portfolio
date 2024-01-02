@@ -13,18 +13,27 @@ export default function Navbars() {
       smooth: true,
     });
   };
+  const scrollToContact = () => {
+    scroll.scrollTo(5100, {
+      smooth: true,
+    });
+  };
 
   return (
-    <Navbar collapseOnSelect expand="lg">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
         <Navbar.Brand>About Me</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
+          <Nav.Link href="resume final.pdf" download>
+              Resume
+            </Nav.Link>
+
             <Nav.Link onClick={scrollToExperiences}>Experience</Nav.Link>
             <Nav.Link onClick={scrollToProjects}>Projects</Nav.Link>
-            <Nav.Link eventKey={2} href="#Contact">
+            <Nav.Link onClick={scrollToContact}>
               Contact
             </Nav.Link>
           </Nav>

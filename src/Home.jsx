@@ -1,7 +1,7 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Navbars from "./navbar";
-import { Container, Row, Col, Card } from "react-bootstrap";
+import { Container, Row, Col, Button ,Placeholder,Card} from "react-bootstrap";
 import BasicCard from "./basiccard";
 import ProjectCard from "./projectcard";
 
@@ -17,7 +17,6 @@ export default function Home() {
               <Row>
                 <Col md={6} className="mb-4 text-center">
                   <p aria-hidden="true">
-                    {/* Placeholder */}
                   </p>
 
                   <p className="fs-3">
@@ -25,7 +24,6 @@ export default function Home() {
                   </p>
 
                   <p aria-hidden="true">
-                    {/* Placeholder */}
                   </p>
                 </Col>
                 <Col md={6} className="d-flex align-items-center justify-content-center">
@@ -66,7 +64,28 @@ export default function Home() {
             <ProjectCard title={"Face Recognition App"} link={"https://github.com/widejoy/face-recognition"} resources={"Python"} description={"An app made using Python Tkinter which can detect the number of faces in an image and compare it with a different image and show if it's the same image."} hght={"27"}></ProjectCard>
             <br /><br />
             <ProjectCard title={"Video Game Library App"} link={"https://github.com/widejoy/my_video_game_list"} resources={"Flutter, Rest API"} description={"An app that contains information about a ton of latest games and their current price from Steam, Epic Games, and GOG Games at the same time. So you can use this one platform and get most of the details you want out of the game like genre, plot, platforms, etc."} hght={"36"}></ProjectCard>
+            <div className="text-center mt-2" style={{ fontSize: "1.8rem", color: "#61dafb" }}>
+             To view more of my projects <a href="https://github.com/widejoy" target="_blank" rel="noopener noreferrer" style={{ color: "#61dafb" }}>click here</a>
+            </div>
           </div>
+          <div>
+            <br /><br />
+          <p aria-hidden="true">
+        <Placeholder xs={12} />
+      </p>
+      <div className="mt-5">
+            <Card className="text-center p-5 bg-dark text-light">
+              <h1>Connect with me at</h1>
+              <div className="mt-4">
+                <Button variant="outline-secondary" className="mx-2" href="mailto:rogerantony40@gmail.com">
+                  Email
+                </Button>
+                <Button variant="outline-secondary" className="mx-2" href="https://www.linkedin.com/in/roger-antony/" target="_blank" rel="noopener noreferrer">
+                  LinkedIn
+                </Button>
+              </div>
+            </Card>
+          </div></div>
         </Fade>
       </div>
     </div>
