@@ -14,7 +14,7 @@ export default function Navbars() {
     });
   };
   const scrollToContact = () => {
-    scroll.scrollTo(5100, {
+    scroll.scrollTo(5600, {
       smooth: true,
     });
   };
@@ -27,7 +27,7 @@ export default function Navbars() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-          <Nav.Link href="resume final.pdf" download>
+          <Nav.Link href="ROGER_RESUME.pdf" download>
               Resume
             </Nav.Link>
 

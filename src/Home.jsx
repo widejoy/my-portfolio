@@ -20,7 +20,7 @@ export default function Home() {
                   </p>
 
                   <p className="fs-3">
-                  TWelcome to my portfolio! I am a robust developer with a task to supply meaningful exchange to the community through Skills and hard work. During my journey, I have contributed to numerous projects each independently and as a part of dynamic agencies. Connecting with fascinated colleagues and increasing my abilties are continually motivating factors. Join me as we discover areas of innovation and collaboration!
+                  Welcome to my portfolio! I am a robust developer with a task to supply meaningful exchange to the community through Skills and hard work. During my journey, I have contributed to numerous projects each independently and as a part of dynamic agencies. Connecting with fascinated colleagues and increasing my abilties are continually motivating factors. Join me as we discover areas of innovation and collaboration!
                   </p>
 
                   <p aria-hidden="true">
@@ -64,6 +64,8 @@ export default function Home() {
             <ProjectCard title={"Face Recognition App"} link={"https://github.com/widejoy/face-recognition"} resources={"Python"} description={"An app made using Python Tkinter which can detect the number of faces in an image and compare it with a different image and show if it's the same image."} hght={"27"}></ProjectCard>
             <br /><br />
             <ProjectCard title={"Video Game Library App"} link={"https://github.com/widejoy/my_video_game_list"} resources={"Flutter, Rest API"} description={"An app that contains information about a ton of latest games and their current price from Steam, Epic Games, and GOG Games at the same time. So you can use this one platform and get most of the details you want out of the game like genre, plot, platforms, etc."} hght={"36"}></ProjectCard>
+            <br /><br />
+            <ProjectCard title={"Quiz App"} link={"https://github.com/widejoy/QuizApp/"} description={"A Quiz app build using flutter and an api from opentdb.com it has dynamc questions and answers from a huge library you answer 5 questions and your score will be revealed at the end"} hght={27.5}></ProjectCard>
             <div className="text-center mt-2" style={{ fontSize: "1.8rem", color: "#61dafb" }}>
              To view more of my projects <a href="https://github.com/widejoy" target="_blank" rel="noopener noreferrer" style={{ color: "#61dafb" }}>click here</a>
             </div>
